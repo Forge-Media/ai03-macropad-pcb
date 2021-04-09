@@ -1,4 +1,4 @@
-# ai03 inpired macropad pcb
+# ai03 Inspired Macropad PCB
 My attempt at learning and implementing ai03's guide to pcb design for keyboards. The aim of this project is to design and manufacture a simple 3by3 MX style macropad pcb, which actuall works. The pcb can then be manufactured and either assembled by hand or by the manufacturer if they provide assembly service.
 
 ## Project requirements:
