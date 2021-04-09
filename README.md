@@ -6,7 +6,7 @@ My attempt at learning and implementing ai03's guide to pcb design for keyboards
 
 - 9 1U switches (mx style)
 - USB-C support
-- ATmega32xxxx MC (TBD)
+- Atmega32u4
 - QMK support
 - VIA support (TBD)
 - Solder support (rev. A)
