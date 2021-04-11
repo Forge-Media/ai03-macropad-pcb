@@ -19,13 +19,14 @@ KiCad 5.1.9 is used for the pcb design, based on [ai03's guide](https://wiki.ai0
 **Required KiCad libraries:**
 
 - [ai03's KiCad Type-C library](https://github.com/ai03-2725/Type-C.pretty) (USB-C 2.0 connector)
-- [ai03's hybrid footprints](https://github.com/ai03-2725/MX_Alps_Hybrid/tree/master/MX_Only.pretty) (Kailh Hotswap LED footprints)
+- [ai03's hybrid footprints](https://github.com/ai03-2725/MX_Alps_Hybrid/tree/master/MX_Only.pretty) (Kailh Hotswap footprints)
+- [ai03's random components](https://github.com/ai03-2725/random-keyboard-parts.pretty) (Reset button footprint)
+- [ebastler's kicad components](https://github.com/ebastler/kicad-keyboard-parts.pretty) (RGB LEDs footprints and 3D models)
 
 **Optional KiCad libraries:**
 
-- [KiCad included switches](https://kicad.github.io/footprints/Button_Switch_Keyboard) (Solder MX footprints)
-- [Perigoso's KiCad Keyboard libraries](https://github.com/perigoso/keyswitch-kicad-library) (Kailh Hotswap footprints)
-- [ebastler's various components](https://github.com/ebastler/kicad-keyboard-parts.pretty) (3D Kailh Hotswap)
+- [KiCad included switches](https://kicad.github.io/footprints/Button_Switch_Keyboard) (Solder MX footprints) (Unless 5.1.9 or later)
+- [Perigoso's KiCad Keyboard libraries](https://github.com/perigoso/keyswitch-kicad-library) (Alternative MX footprints)
 - (TBD)
 
 Autocad, Rhino and Fusion 360 are used for the case design.
@@ -34,8 +35,8 @@ Autocad, Rhino and Fusion 360 are used for the case design.
 
 - [ai03's - pcb guide](https://wiki.ai03.com/books/pcb-design)
 - [ai03's KiCad library list](https://wiki.ai03.com/books/pcb-design/page/list-of-kicad-keyboard-parts-libraries)
-- [Keyboard Atelier Discord](https://discord.gg/b7vwhHS)
 - [33C Discord](https://discord.gg/6fHK4uk)
+- [Keyboard Atelier Discord](https://discord.gg/b7vwhHS)
 - [QMK Docs](https://beta.docs.qmk.fm/developing-qmk/c-development/compatible_microcontrollers)
 - [Hadi's - PCB design series](https://www.youtube.com/channel/UCpWGAJr2AU7LPUwVYbBQZRg/playlists) (Incomplete!)
 - [KoBuss' - How we designed a mechanicial keyboard pcb](https://www.youtube.com/watch?v=ezk02GJ9iMs)
