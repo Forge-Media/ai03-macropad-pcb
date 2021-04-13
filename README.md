@@ -4,13 +4,14 @@ My attempt at learning and implementing ai03's guide to pcb design for keyboards
 
 ## Project requirements:
 
-- 9 1U switches (mx style)
+- 9 1U MX-Hotswap switches
 - USB-C support
-- Atmega32u4
+- Atmega32u4 support (MU QFN-44 version)
+- Per-key RGB LED (9 LEDs)
+- RGB Underglow (4 LEDs)
+- ESD and Reverse Bias protection (Fused VCC and +5v)
 - QMK support
 - VIA support (TBD)
-- Solder support (rev. A)
-- Hotswap support (Rev. B)
 
 ## CAD
 

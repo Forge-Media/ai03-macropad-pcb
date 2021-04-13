@@ -1552,22 +1552,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 4600 4600 4600
 Wire Wire Line
-	5200 4600 5300 4600
-Wire Wire Line
-	5300 4600 5300 5900
-Wire Wire Line
-	5300 5900 5200 5900
-Wire Wire Line
-	4600 5900 4400 5900
-Wire Wire Line
-	3800 5900 3600 5900
-Wire Wire Line
-	3000 5900 2900 5900
-Wire Wire Line
-	2900 5900 2900 7200
-Wire Wire Line
-	2900 7200 3000 7200
-Wire Wire Line
 	3600 7200 3800 7200
 Wire Wire Line
 	4400 7200 4600 7200
@@ -1856,7 +1840,7 @@ Wire Notes Line
 	7650 3900 5650 3900
 Text GLabel 2950 4600 0    50   Input ~ 0
 RGB1
-Text GLabel 5250 7200 2    50   Input ~ 0
+Text GLabel 5250 7200 2    50   Output ~ 0
 RGB2
 Wire Wire Line
 	5200 7200 5250 7200
@@ -1966,7 +1950,7 @@ U 1 1 6073C561
 P 3300 4600
 F 0 "D11" H 3300 4950 50  0000 L CNN
 F 1 "SK6812MINI-E" H 3300 4850 50  0000 L CNN
-F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 3350 4300 50  0001 L TNN
+F 2 "kicad-keyboard-parts:MX_SK6812MINI-E_REV" H 3350 4300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3400 4225 50  0001 L TNN
 	1    3300 4600
 	1    0    0    -1  
@@ -1992,39 +1976,6 @@ F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 4950 4300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 5000 4225 50  0001 L TNN
 	1    4900 4600
 	1    0    0    -1  
-$EndComp
-$Comp
-L kicad-keyboard-parts:SK6812MINI-E D19
-U 1 1 60741DD2
-P 4900 5900
-F 0 "D19" H 4800 6250 50  0000 L CNN
-F 1 "SK6812MINI-E" H 4350 6150 50  0000 L CNN
-F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 4950 5600 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 5000 5525 50  0001 L TNN
-	1    4900 5900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L kicad-keyboard-parts:SK6812MINI-E D16
-U 1 1 60750D73
-P 4100 5900
-F 0 "D16" H 4000 6250 50  0000 L CNN
-F 1 "SK6812MINI-E" H 3550 6150 50  0000 L CNN
-F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 4150 5600 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4200 5525 50  0001 L TNN
-	1    4100 5900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L kicad-keyboard-parts:SK6812MINI-E D12
-U 1 1 60751636
-P 3300 5900
-F 0 "D12" H 3200 6250 50  0000 L CNN
-F 1 "SK6812MINI-E" H 2750 6150 50  0000 L CNN
-F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 3350 5600 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3400 5525 50  0001 L TNN
-	1    3300 5900
-	-1   0    0    -1  
 $EndComp
 $Comp
 L kicad-keyboard-parts:SK6812MINI-E D13
@@ -2132,4 +2083,88 @@ Text Notes 8150 7650 0    59   ~ 0
 April 2021
 Text Notes 10550 7650 0    59   ~ 0
 A
+$Comp
+L Device:R_Small R8
+U 1 1 607489F7
+P 10500 5100
+F 0 "R8" V 10400 5100 50  0000 C TNN
+F 1 "300" V 10500 5100 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 5100 50  0001 C CNN
+F 3 "~" H 10500 5100 50  0001 C CNN
+	1    10500 5100
+	0    1    1    0   
+$EndComp
+Text GLabel 10750 5100 2    50   Input ~ 0
+RGB1
+Wire Wire Line
+	10750 5100 10600 5100
+Text GLabel 10750 5250 2    50   Input ~ 0
+COL0
+Text GLabel 10750 5400 2    50   Input ~ 0
+COL1
+Text GLabel 10750 5550 2    50   Input ~ 0
+COL2
+Text GLabel 10750 5700 2    50   Input ~ 0
+ROW0
+Text GLabel 10750 5850 2    50   Input ~ 0
+ROW1
+Text GLabel 10750 6000 2    50   Input ~ 0
+ROW2
+$Comp
+L kicad-keyboard-parts:SK6812MINI-E D12
+U 1 1 60761311
+P 3300 5900
+F 0 "D12" H 3300 6250 50  0000 L CNN
+F 1 "SK6812MINI-E" H 3300 6150 50  0000 L CNN
+F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 3350 5600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3400 5525 50  0001 L TNN
+	1    3300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L kicad-keyboard-parts:SK6812MINI-E D16
+U 1 1 6076131B
+P 4100 5900
+F 0 "D16" H 4100 6250 50  0000 L CNN
+F 1 "SK6812MINI-E" H 4100 6150 50  0000 L CNN
+F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 4150 5600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4200 5525 50  0001 L TNN
+	1    4100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L kicad-keyboard-parts:SK6812MINI-E D19
+U 1 1 60761325
+P 4900 5900
+F 0 "D19" H 4900 6250 50  0000 L CNN
+F 1 "SK6812MINI-E" H 4900 6150 50  0000 L CNN
+F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 4950 5600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 5000 5525 50  0001 L TNN
+	1    4900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4600 5250 4600
+Wire Wire Line
+	5250 4600 5250 5150
+Wire Wire Line
+	5250 5150 2850 5150
+Wire Wire Line
+	2850 5150 2850 5900
+Wire Wire Line
+	2850 5900 3000 5900
+Wire Wire Line
+	3600 5900 3800 5900
+Wire Wire Line
+	4400 5900 4600 5900
+Wire Wire Line
+	5200 5900 5250 5900
+Wire Wire Line
+	5250 5900 5250 6450
+Wire Wire Line
+	5250 6450 2850 6450
+Wire Wire Line
+	2850 6450 2850 7200
+Wire Wire Line
+	2850 7200 3000 7200
 $EndSCHEMATC
