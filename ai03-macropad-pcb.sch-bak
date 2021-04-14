@@ -248,10 +248,6 @@ D-
 Connection ~ 1450 2900
 Connection ~ 1550 2800
 Wire Wire Line
-	1550 2800 2100 2800
-Wire Wire Line
-	1450 2900 2100 2900
-Wire Wire Line
 	1350 2300 2100 2300
 Connection ~ 1350 2300
 Text Notes 550  1350 0    59   ~ 12
@@ -280,11 +276,11 @@ F 3 "" H 3400 1050 50  0001 C CNN
 	1    3400 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 3400 1450 2    50   Input ~ 0
+Text GLabel 3400 1250 2    50   Input ~ 0
 MISO
 Text GLabel 3400 1350 2    50   Input ~ 0
 MOSI
-Text GLabel 3400 1250 2    50   Input ~ 0
+Text GLabel 3400 1450 2    50   Input ~ 0
 SCK
 Text GLabel 3400 1150 2    50   Input ~ 0
 RST
@@ -432,34 +428,6 @@ Wire Wire Line
 Wire Wire Line
 	10600 4800 11000 4800
 $Comp
-L Device:R_Small R5
-U 1 1 6072EE07
-P 8500 3700
-F 0 "R5" V 8400 3700 50  0000 C TNN
-F 1 "22" V 8500 3700 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8500 3700 50  0001 C CNN
-F 3 "~" H 8500 3700 50  0001 C CNN
-	1    8500 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 6073035A
-P 8500 3800
-F 0 "R6" V 8600 3800 50  0000 C BNN
-F 1 "22" V 8500 3800 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8500 3800 50  0001 C CNN
-F 3 "~" H 8500 3800 50  0001 C CNN
-	1    8500 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8900 3700 8600 3700
-Wire Wire Line
-	8900 3800 8600 3800
-Wire Wire Line
-	8400 3700 8000 3700
-$Comp
 L Device:C_Small C16
 U 1 1 6073582C
 P 8000 4100
@@ -470,8 +438,6 @@ F 3 "~" H 8000 4100 50  0001 C CNN
 	1    8000 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8000 3800 8400 3800
 Wire Wire Line
 	8900 4000 8000 4000
 $Comp
@@ -604,10 +570,6 @@ Text GLabel 7350 2500 2    50   Output ~ 0
 RST
 Text GLabel 8850 2700 0    50   Input ~ 0
 RST
-Text GLabel 8000 3700 0    50   Input ~ 0
-D+
-Text GLabel 8000 3800 0    50   Input ~ 0
-D-
 $Comp
 L Device:C_Small C15
 U 1 1 6073EF24
@@ -1089,8 +1051,6 @@ Wire Notes Line
 	11150 6450 11150 1950
 Wire Notes Line
 	11150 1950 7700 1950
-Wire Notes Line
-	7700 1950 7700 6450
 $Comp
 L power:+5V #PWR0123
 U 1 1 609A250C
@@ -1819,15 +1779,6 @@ F 3 "" H 7100 6200 50  0001 C CNN
 	1    7100 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 5850 6800 5850
-Wire Wire Line
-	7400 4600 7500 4600
-Wire Wire Line
-	7500 4600 7500 5850
-Wire Wire Line
-	7500 5850 7400 5850
-NoConn ~ 5950 5850
 Text Notes 5650 3900 0    59   ~ 12
 Underglow RGB array
 Wire Notes Line
@@ -1950,7 +1901,7 @@ U 1 1 6073C561
 P 3300 4600
 F 0 "D11" H 3300 4950 50  0000 L CNN
 F 1 "SK6812MINI-E" H 3300 4850 50  0000 L CNN
-F 2 "kicad-keyboard-parts:MX_SK6812MINI-E_REV" H 3350 4300 50  0001 L TNN
+F 2 "kicad-keyboard-parts:MX_SK6812MINI-E" H 3350 4300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 3400 4225 50  0001 L TNN
 	1    3300 4600
 	1    0    0    -1  
@@ -2036,23 +1987,23 @@ $Comp
 L kicad-keyboard-parts:WS2812B-MINI D22
 U 1 1 60758283
 P 6250 5850
-F 0 "D22" H 6150 6200 50  0000 C CNN
-F 1 "WS2812B-MINI" H 5950 6100 50  0000 C CNN
+F 0 "D22" H 6350 6200 50  0000 C CNN
+F 1 "WS2812B-MINI" H 6550 6100 50  0000 C CNN
 F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 6300 5550 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6350 5475 50  0001 L TNN
 	1    6250 5850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L kicad-keyboard-parts:WS2812B-MINI D24
 U 1 1 60769B15
 P 7100 5850
-F 0 "D24" H 7000 6200 50  0000 C CNN
-F 1 "WS2812B-MINI" H 6800 6100 50  0000 C CNN
+F 0 "D24" H 7200 6200 50  0000 C CNN
+F 1 "WS2812B-MINI" H 7400 6100 50  0000 C CNN
 F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7150 5550 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7200 5475 50  0001 L TNN
 	1    7100 5850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J1
@@ -2060,7 +2011,7 @@ U 1 1 607B4FDC
 P 3100 1350
 F 0 "J1" H 3400 1200 50  0000 C CNN
 F 1 "Conn_01x06" H 3400 1300 50  0000 C CNN
-F 2 "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" H 3100 1350 50  0001 C CNN
+F 2 "Connector_JST:JST_SHL_SM06B-SHLS-TF_1x06-1MP_P1.00mm_Horizontal" H 3100 1350 50  0001 C CNN
 F 3 "~" H 3100 1350 50  0001 C CNN
 	1    3100 1350
 	-1   0    0    1   
@@ -2086,30 +2037,22 @@ A
 $Comp
 L Device:R_Small R8
 U 1 1 607489F7
-P 10500 5100
-F 0 "R8" V 10400 5100 50  0000 C TNN
-F 1 "300" V 10500 5100 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 5100 50  0001 C CNN
-F 3 "~" H 10500 5100 50  0001 C CNN
-	1    10500 5100
+P 10500 5200
+F 0 "R8" V 10400 5200 50  0000 C TNN
+F 1 "300" V 10500 5200 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10500 5200 50  0001 C CNN
+F 3 "~" H 10500 5200 50  0001 C CNN
+	1    10500 5200
 	0    1    1    0   
 $EndComp
-Text GLabel 10750 5100 2    50   Input ~ 0
+Text GLabel 10650 5200 2    50   Input ~ 0
 RGB1
-Wire Wire Line
-	10750 5100 10600 5100
-Text GLabel 10750 5250 2    50   Input ~ 0
+Text GLabel 10150 5100 2    50   Input ~ 0
 COL0
-Text GLabel 10750 5400 2    50   Input ~ 0
+Text GLabel 10150 5300 2    50   Input ~ 0
 COL1
-Text GLabel 10750 5550 2    50   Input ~ 0
+Text GLabel 10150 5400 2    50   Input ~ 0
 COL2
-Text GLabel 10750 5700 2    50   Input ~ 0
-ROW0
-Text GLabel 10750 5850 2    50   Input ~ 0
-ROW1
-Text GLabel 10750 6000 2    50   Input ~ 0
-ROW2
 $Comp
 L kicad-keyboard-parts:SK6812MINI-E D12
 U 1 1 60761311
@@ -2167,4 +2110,91 @@ Wire Wire Line
 	2850 6450 2850 7200
 Wire Wire Line
 	2850 7200 3000 7200
+Wire Wire Line
+	1450 2900 2100 2900
+$Comp
+L Device:R_Small R6
+U 1 1 6073035A
+P 8300 3800
+F 0 "R6" V 8400 3800 50  0000 C BNN
+F 1 "22" V 8300 3800 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 3800 50  0001 C CNN
+F 3 "~" H 8300 3800 50  0001 C CNN
+	1    8300 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 2800 2100 2800
+$Comp
+L Device:R_Small R5
+U 1 1 6072EE07
+P 8300 3700
+F 0 "R5" V 8200 3700 50  0000 C TNN
+F 1 "22" V 8300 3700 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 3700 50  0001 C CNN
+F 3 "~" H 8300 3700 50  0001 C CNN
+	1    8300 3700
+	0    1    1    0   
+$EndComp
+Text GLabel 8000 3800 0    50   Input ~ 0
+D-
+Text GLabel 8000 3700 0    50   Input ~ 0
+D+
+Wire Notes Line
+	7700 1950 7700 6450
+Wire Wire Line
+	8000 3700 8200 3700
+Wire Wire Line
+	8000 3800 8200 3800
+Text GLabel 10150 3700 2    50   Input ~ 0
+ROW0
+Text GLabel 10150 3600 2    50   Input ~ 0
+ROW1
+Text GLabel 10150 3300 2    50   Input ~ 0
+ROW2
+Wire Wire Line
+	10150 3300 10100 3300
+Wire Wire Line
+	10150 3600 10100 3600
+Wire Wire Line
+	10150 3700 10100 3700
+Wire Wire Line
+	10150 5100 10100 5100
+Wire Wire Line
+	10100 5200 10400 5200
+Wire Wire Line
+	10600 5200 10650 5200
+Wire Wire Line
+	10150 5400 10100 5400
+Wire Wire Line
+	10150 5300 10100 5300
+Wire Wire Line
+	8400 3800 8500 3800
+Wire Wire Line
+	8400 3700 8500 3700
+Wire Wire Line
+	8900 3800 8800 3800
+Wire Wire Line
+	8900 3700 8800 3700
+Text Label 8800 3800 2    50   ~ 0
+D-
+Text Label 8800 3700 2    50   ~ 0
+D+
+Text Label 8500 3800 0    50   ~ 0
+D-
+Text Label 8500 3700 0    50   ~ 0
+D+
+Wire Wire Line
+	5850 5150 5850 5850
+Wire Wire Line
+	5850 5850 5950 5850
+Wire Wire Line
+	7500 5150 7500 4600
+Wire Wire Line
+	7500 4600 7400 4600
+Wire Wire Line
+	5850 5150 7500 5150
+Wire Wire Line
+	6550 5850 6800 5850
+NoConn ~ 7400 5850
 $EndSCHEMATC
