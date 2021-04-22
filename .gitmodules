@@ -10,3 +10,6 @@
 [submodule "kicad-keyboard-parts.pretty"]
 	path = kicad-keyboard-parts.pretty
 	url = https://github.com/ebastler/kicad-keyboard-parts.pretty
+[submodule "Keebio-Parts.pretty"]
+	path = Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty
