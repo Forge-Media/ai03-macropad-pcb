@@ -1976,12 +1976,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R6
 U 1 1 6073035A
-P 8450 3800
-F 0 "R6" V 8550 3800 50  0000 C BNN
-F 1 "22" V 8450 3800 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8450 3800 50  0001 C CNN
-F 3 "~" H 8450 3800 50  0001 C CNN
-	1    8450 3800
+P 8200 3800
+F 0 "R6" V 8300 3800 50  0000 C BNN
+F 1 "22" V 8200 3800 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8200 3800 50  0001 C CNN
+F 3 "~" H 8200 3800 50  0001 C CNN
+	1    8200 3800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1989,12 +1989,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R5
 U 1 1 6072EE07
-P 8450 3700
-F 0 "R5" V 8350 3700 50  0000 C TNN
-F 1 "22" V 8450 3700 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8450 3700 50  0001 C CNN
-F 3 "~" H 8450 3700 50  0001 C CNN
-	1    8450 3700
+P 8200 3700
+F 0 "R5" V 8100 3700 50  0000 C TNN
+F 1 "22" V 8200 3700 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8200 3700 50  0001 C CNN
+F 3 "~" H 8200 3700 50  0001 C CNN
+	1    8200 3700
 	0    1    1    0   
 $EndComp
 Wire Notes Line
@@ -2126,16 +2126,12 @@ Wire Wire Line
 Wire Wire Line
 	5250 7200 5250 7250
 Wire Wire Line
-	8150 3800 8350 3800
+	7900 3800 8100 3800
 Wire Wire Line
-	8150 3700 8350 3700
-Wire Wire Line
-	8900 3800 8550 3800
-Wire Wire Line
-	8550 3700 8900 3700
-Text GLabel 8150 3800 0    50   Input ~ 0
+	7900 3700 8100 3700
+Text GLabel 7900 3800 0    50   Input ~ 0
 D-
-Text GLabel 8150 3700 0    50   Input ~ 0
+Text GLabel 7900 3700 0    50   Input ~ 0
 D+
 $Comp
 L power:+5V #PWR0105
@@ -2264,4 +2260,20 @@ NoConn ~ 10100 3200
 NoConn ~ 10100 3100
 NoConn ~ 10100 2700
 NoConn ~ 10100 5600
+Wire Wire Line
+	8300 3700 8400 3700
+Wire Wire Line
+	8300 3800 8400 3800
+Wire Wire Line
+	8900 3700 8800 3700
+Wire Wire Line
+	8900 3800 8800 3800
+Text GLabel 8800 3800 0    50   Input ~ 0
+D_N
+Text GLabel 8400 3800 2    50   Output ~ 0
+D_N
+Text GLabel 8400 3700 2    50   Output ~ 0
+D_P
+Text GLabel 8800 3700 0    50   Input ~ 0
+D_P
 $EndSCHEMATC
